@@ -27,6 +27,7 @@ public:
         }
 
     }
+
     double GetInfo(int user)
     {
         int page_number = readers[user];
@@ -47,11 +48,10 @@ public:
         }
         return part_users;
     }
+    
 private:
     std::vector<int> readers = std::vector<int>(1000001, 0);
-
     std::vector<int> readers_count = std::vector<int>(1001, 0);
-
     int count_user = 0;
 
 
